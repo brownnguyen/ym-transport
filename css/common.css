@@ -1,0 +1,7 @@
+@charset "UTF-8";
+body {
+    font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+        "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+    font-size: 1.4rem;
+    background-color: #000;
+}
