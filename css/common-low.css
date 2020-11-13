@@ -16,12 +16,6 @@ h3.title {
     font-size: 2rem;
     display: block; }
 
-p.text {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 6rem;
-  padding: 0 20px; }
-
 .top-block {
   position: relative; }
   .top-block::before {
