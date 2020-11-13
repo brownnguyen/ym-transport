@@ -103,6 +103,8 @@ footer.footer {
         color: #4d4d4d;
         font-size: 1.6rem;
         font-weight: 600; }
+        footer.footer .footer-content .list-footer a:hover {
+          opacity: 0.8; }
     footer.footer .footer-content .logo {
       max-width: 320px;
       width: 100%;

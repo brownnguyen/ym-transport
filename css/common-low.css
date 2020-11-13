@@ -4,8 +4,34 @@
   to {
     transform: translateY(0); } }
 
+h3.title {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 6rem;
+  color: #00a99d;
+  margin: 3rem 0; }
+  h3.title span {
+    margin-top: 2rem;
+    color: black;
+    font-size: 2rem;
+    display: block; }
+
+p.text {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 6rem;
+  padding: 0 20px; }
+
 .top-block {
   position: relative; }
+  .top-block::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    content: ""; }
   .top-block img {
     width: 100%; }
   .top-block .text-top {
@@ -113,6 +139,8 @@
       object-fit: cover; } }
 
 @media screen and (max-width: 576px) {
+  h3.title {
+    font-size: 4rem; }
   .contact-common .contact-content h2.title span {
     font-size: 4.5rem; }
   .contact-common .contact-content p.text {
