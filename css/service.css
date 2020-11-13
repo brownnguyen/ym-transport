@@ -47,6 +47,7 @@
 }
 .service-title.title span {
   font-size: 2.1rem;
+  margin: 0;
   font-family: "Source Sans Pro", sans-serif;
   color: currentColor;
 }
@@ -76,6 +77,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 5rem;
 }
 .service__support .content h3 {
   font-size: 2.6rem;
@@ -104,11 +106,11 @@
   width: 100%;
   background-color: #1A1A1A;
   margin-top: 8rem;
+  display: inline-block;
 }
 .vehicle__container {
   justify-content: center;
   padding-bottom: 8rem;
-  padding-top: 5.5rem;
 }
 .vehicle__container .item {
   max-width: calc((100%/3) - 25px);

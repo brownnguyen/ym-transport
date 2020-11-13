@@ -49,6 +49,7 @@ sans-serif;
     &-title.title {
         span {
             font-size: 2.1rem;
+            margin: 0;
             font-family: $font_SourceSanPro;
             color: currentColor;
         }
@@ -78,6 +79,7 @@ sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            padding-left: 5rem;
             h3 {
                 font-size: 2.6rem;
                 font-weight: 700;
@@ -108,10 +110,10 @@ sans-serif;
     width: 100%;
     background-color: #1A1A1A;
     margin-top: 8rem;
+    display: inline-block;
     &__container {
         justify-content: center;
         padding-bottom: 8rem;
-        padding-top: 5.5rem;
         .item {
             max-width: calc((100%/3) - 25px);
             margin-top: 5rem;
