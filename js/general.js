@@ -1,6 +1,7 @@
 var menuBurger = document.querySelector('.menu-burger');
 var headerList = document.querySelector('.header-list');
 var layer = document.querySelector('.drawer .layer');
+var _totop = $('.to-top');
 menuBurger.onclick = function () {
     menuBurger.classList.toggle('active');
     if (menuBurger.classList.contains('active')) {
@@ -17,3 +18,18 @@ layer.onclick = function () {
     headerList.classList.remove('active');
     layer.classList.remove('active')
 }
+
+_totop.click(function (e) {
+    e.preventDefault();
+    $("html,body").animate({
+        scrollTop: 0,
+    },
+        1000,
+        "swing"
+    );
+});
+$(".slide-line").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".recruit").offset().top - 150
+    }, 2000);
+});

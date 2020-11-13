@@ -51,11 +51,17 @@ h3.title {
         margin-top: 2rem; }
     .top-block .text-top .slide-line {
       animation: slideAni 1.5s infinite;
-      display: block;
-      height: 80px;
-      width: 1px;
-      background-color: white;
-      margin: 30px auto 0 auto; }
+      padding: 10px;
+      width: 50px;
+      cursor: pointer;
+      margin: 30px auto 0 auto;
+      display: block; }
+      .top-block .text-top .slide-line span {
+        display: block;
+        height: 80px;
+        width: 1px;
+        background-color: white;
+        margin: auto; }
 
 .contact-common {
   position: relative; }
