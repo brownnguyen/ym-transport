@@ -46,6 +46,13 @@ sans-serif;
 
 .service {
     width: 100%;
+    &-title.title {
+        span {
+            font-size: 2.1rem;
+            font-family: $font_SourceSanPro;
+            color: currentColor;
+        }
+    }
     &__support {
         margin-top: 5rem;
         .images {

@@ -45,6 +45,11 @@
 .service {
   width: 100%;
 }
+.service-title.title span {
+  font-size: 2.1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: currentColor;
+}
 .service__support {
   margin-top: 5rem;
 }
