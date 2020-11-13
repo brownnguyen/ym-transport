@@ -2,7 +2,8 @@
 body {
     font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
     font-size: 1.4rem;
-    background-color: #FFF;
+    color: black;
+    background-color: #fff;
 }
 
 body>main {
@@ -12,4 +13,353 @@ body>main {
 @font-face {
     font-family: AlFresco;
     src: url("../assets/plugins/fonts/AlFresco.ttf");
+}
+
+@font-face {
+    src: url(../assets/plugins/fonts/DINProBold700.otf);
+    font-family: DIN Pro;
+}
+
+header.header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.header .header-content h1 {
+    padding-left: 50px;
+    transition: 0.3s ease;
+}
+
+header.header .header-content h1:hover {
+    opacity: 0.8;
+}
+
+header.header .header-content .menu-burger {
+    display: none;
+}
+
+header.header .header-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.header .header-list li {
+    padding: 30px 0;
+    margin: auto;
+    height: 150px;
+    color: white;
+}
+
+header.header .header-list li span {
+    font-size: 1.8rem;
+    color: #4d4d4d;
+    font-weight: bold;
+}
+
+header.header .header-list li p.li-header {
+    margin-top: 5px;
+    font-size: 1.5rem;
+    color: #22af73;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+header.header .header-list li a {
+    width: 190px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid #e0e0e0;
+    transition: 0.3s ease;
+}
+
+header.header .header-list li a:hover {
+    opacity: 0.8;
+}
+
+header.header .header-list .last-li a {
+    border: none;
+}
+
+header.header .header-list .phone-header {
+    height: 150px;
+    background-color: #1a1a1a;
+}
+
+header.header .header-list .phone-header a {
+    width: 320px;
+    border: none;
+    color: white;
+}
+
+header.header .header-list .phone-header a:hover {
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+header.header .header-list .phone-header .top {
+    font-size: 1.4rem;
+    color: white;
+}
+
+header.header .header-list .phone-header .bot {
+    font-size: 1.5rem;
+    color: white;
+}
+
+header.header .header-list .phone-header .li-header-phone {
+    font-size: 4rem;
+    font-family: "Bebas Neue", cursive;
+    display: flex;
+    align-items: center;
+}
+
+header.header .header-list .phone-header .li-header-phone span {
+    font-size: 2.5rem;
+    color: white;
+    margin-right: 10px;
+}
+
+footer.footer {
+    background-color: #f2f2f2;
+}
+
+footer.footer .icon-home {
+    padding-right: 10px;
+}
+
+footer.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 285px;
+}
+
+footer.footer .footer-content .list-footer {
+    max-width: 580px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer.footer .footer-content .list-footer li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer.footer .footer-content .list-footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4d4d4d;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+footer.footer .footer-content .logo {
+    max-width: 320px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+footer.footer .footer-content .logo .text-body {
+    padding-top: 15px;
+}
+
+footer.footer .footer-content .logo .text-body .text-direct {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer.footer .footer-content .logo .text-body .text-direct .tel,
+footer.footer .footer-content .logo .text-body .text-direct .fax {
+    font-family: "Bebas Neue", cursive;
+    font-size: 2.8rem;
+}
+
+footer.footer .footer-content .logo .text-body .text-direct .tel span,
+footer.footer .footer-content .logo .text-body .text-direct .fax span {
+    font-size: 1.8rem;
+}
+
+footer.footer .footer-low {
+    height: 60px;
+    background-color: #007e75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer.footer .footer-low p.text-footer {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    header.header {
+        height: 120px;
+    }
+    header.header .header-content h1 {
+        padding-left: 20px;
+    }
+    header.header .header-list li {
+        padding: 15px 0;
+        height: unset !important;
+    }
+    header.header .header-list li a {
+        width: unset;
+        padding: 0 30px;
+    }
+    header.header .header-list .phone-header a {
+        padding: 0;
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .drawer .layer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 888;
+        transform: translateY(100%);
+    }
+    .drawer .layer.active {
+        transform: translateY(0);
+    }
+    header.header {
+        height: 80px;
+    }
+    header.header .header-content {
+        justify-content: center;
+        position: relative;
+    }
+    header.header .header-content h1 {
+        padding: 0;
+    }
+    header.header .header-content h1 img {
+        height: 60px;
+    }
+    header.header .header-content .menu-burger {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999;
+    }
+    header.header .header-list {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: calc(100% - 60px);
+        flex-wrap: wrap;
+        background-color: #333333;
+        transition: 0.3s ease-in-out;
+        transform: translateY(-100%);
+    }
+    header.header .header-list li {
+        width: 100%;
+        padding: 0;
+    }
+    header.header .header-list li a {
+        padding: 0;
+        margin: 0 20px;
+        border-right: 0;
+        border-bottom: 1px solid #666666;
+        height: 84px;
+    }
+    header.header .header-list li a span {
+        color: white;
+    }
+    header.header .header-list .phone-header {
+        display: none;
+    }
+    header.header .header-list.active {
+        transform: translateY(0);
+    }
+    header.header .menu-burger {
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        background-color: #22af73;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.3s ease-in-out;
+    }
+    header.header .menu-burger .span-line {
+        width: 20px;
+        height: 13px;
+        position: relative;
+        transition: 0.3s ease-in-out;
+        transition-delay: 0.3s;
+    }
+    header.header .menu-burger .span-line span {
+        transition-delay: 0.3s;
+        transition: 0.3s ease-in-out;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        top: 7px;
+        left: 0;
+    }
+    header.header .menu-burger .span-line span:first-of-type {
+        transform: translateY(-7px);
+    }
+    header.header .menu-burger .span-line span:last-of-type {
+        transform: translateY(7px);
+    }
+    header.header .menu-burger p.menu {
+        margin-top: 10px;
+        color: white;
+        font-size: 1rem;
+        font-family: DIN Pro;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        height: 16px;
+    }
+    header.header .menu-burger.active {
+        background-color: #1a1a1a;
+    }
+    header.header .menu-burger.active .span-line {
+        height: 35px;
+        width: 35px;
+    }
+    header.header .menu-burger.active .span-line span {
+        top: 16px;
+        transform: translateY(0) rotate(45deg);
+    }
+    header.header .menu-burger.active .span-line span:last-of-type {
+        transform: rotate(135deg);
+    }
+    header.header .menu-burger.active p.menu {
+        height: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer.footer .footer-content {
+        height: 220px;
+    }
+    footer.footer .footer-content .logo {
+        margin: auto;
+    }
+    footer.footer .footer-content .logo img {
+        margin: auto;
+    }
+    footer.footer .footer-content .list-footer {
+        display: none;
+    }
 }

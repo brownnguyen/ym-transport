@@ -45,6 +45,9 @@
 .service {
   width: 100%;
 }
+.service__support {
+  margin-top: 5rem;
+}
 .service__support .images {
   max-width: 44%;
 }
@@ -77,6 +80,7 @@
   margin-top: 3rem;
 }
 .service__type {
+  margin-top: 5rem;
   justify-content: space-between;
 }
 .service__type .item {
@@ -94,6 +98,7 @@
 .vehicle {
   width: 100%;
   background-color: #1A1A1A;
+  margin-top: 8rem;
 }
 .vehicle__container {
   justify-content: center;

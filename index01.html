@@ -20,21 +20,78 @@
     <link href="./assets/css/reset.css" rel="stylesheet">
     <link href="./assets/css/bootstrap-custom.css" rel="stylesheet">
     <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/common-low.css" rel="stylesheet">
     <link href="./css/top.css" rel="stylesheet">
     <!-- #endregion -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <title>top</title>
 
 </head>
 
 <body>
-    <header>
-
+    <header class="header">
+        <div class="header-content">
+            <h1>
+                <a href="./">
+                    <img src="../images/common/logo.svg" alt="">
+                </a>
+            </h1>
+            <div class="drawer">
+                <div class="layer"></div>
+                <div class="menu-burger">
+                    <div class="span-line">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <p class="menu">
+                        MENU
+                    </p>
+                </div>
+            </div>
+            <ul class="header-list">
+                <li>
+                    <a href="../index01.html">
+                        <span>ホーム</span>
+                        <p class="li-header">HOME</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../service">
+                        <span>業務内容</span>
+                        <p class="li-header">SERVICE</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./company">
+                        <span>会社概要</span>
+                        <p class="li-header">COMPANY</p>
+                    </a>
+                </li>
+                <li class="last-li">
+                    <a href="../recruit/">
+                        <span>採用情報</span>
+                        <p class="li-header">RECRUIT</p>
+                    </a>
+                </li>
+                <li class="phone-header">
+                    <a href="tel:043-462-7589">
+                        <span class="top">お電話でのお問い合わせはこちら</span>
+                        <p class="li-header-phone"> <span>
+                                TEL
+                            </span> 043-462-7589</p>
+                        <span class="bot">
+                            営業時間 平日 9:00〜18:00
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
-
         <!-- #region: hero -->
         <section class="hero">
 
@@ -178,10 +235,64 @@
         </section>
         <!-- #endregion -->
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="../images/common/logo.svg" alt="">
+                    <div class="text-body">
+                        <p class="text">
+                            〒285-0835 千葉県佐倉市畔田字仲新畑898番地44
+                        </p>
+                        <div class="text-direct">
+                            <p class="tel">
+                                <span>
+                                    TEL
+                                </span> 043-462-7589
+                            </p>
+                            <p class="fax">
+                                <span>
+                                    FAX
+                                </span> 043-488-0697
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="list-footer">
+                    <li>
+                        <a href="../index01.html">
+                            <img src="../images/common/icon-home.png" alt="" class="icon-home"> ホーム
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../service">
+                            業務内容
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../company/">
+                            会社概要
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../recruit/">
+                            採用情報
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            個人情報保護方針
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-low">
+            <p class="text-footer">
+                Copyright©️YM TRANSPORT All Rights Reserved.
+            </p>
+        </div>
     </footer>
-
     <a class="to-top" href="#"></a>
     <script src="./assets/js/jquery-2.2.4.min.js "></script>
     <!-- #region:addJs -->

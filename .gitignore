@@ -1,0 +1,11 @@
+node_modules
+scss
+sass
+*.scss
+gulpfile.js
+.vscode
+package-lock.json
+*.json
+*.css.map
+css/sourcmap
+.sass-cache
