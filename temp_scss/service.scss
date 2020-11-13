@@ -1,0 +1,206 @@
+@charset 'UTF-8';
+@import './functions.scss';
+$font_SourceSanPro:'Source Sans Pro',
+sans-serif;
+$font_AlFresco: AlFresco,
+sans-serif;
+.lead {
+    font-size: 1.75vw; //2.8rem;
+    font-weight: 700;
+    color: #000;
+    &.center {
+        text-align: center;
+    }
+    @include near_ipadpro {
+        font-size: 1.9rem //2.1rem;
+    }
+}
+
+.text-desc {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #1A1A1A;
+    // letter-spacing: .1rem;
+    &.center {
+        text-align: center;
+    }
+    &.white {
+        color: #fff;
+    }
+    @include near_ipadpro {
+        font-size: 1.6rem;
+    }
+}
+
+.f-symbol {
+    display: inline-block;
+    max-width: 7px;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    >.item {
+        width: 100%;
+        &.item2 {
+            max-width: 50%;
+        }
+    }
+}
+
+.service {
+    width: 100%;
+    &-title.title {
+        font-size: 8rem;
+        span {
+            font-size: 2.1rem;
+            margin: 0;
+            font-family: $font_SourceSanPro;
+            color: currentColor;
+        }
+        @include near_mobile {
+            font-size: 4rem;
+        }
+    }
+    &__support {
+        margin-top: 5rem;
+        .images {
+            max-width: 44%;
+            figure {
+                position: relative;
+                .under {
+                    position: absolute;
+                    z-index: -1;
+                    width: 18.5rem;
+                    left: 3rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    +img {
+                        max-width: 35.7rem;
+                        margin-left: auto;
+                    }
+                }
+            }
+            @include near_ipadpro {
+                max-width: 32rem;
+                min-width: 32rem;
+                margin: 0 auto;
+                figure {
+                    .under {
+                        width: 12.2rem;
+                        +img {
+                            max-width: 23.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        .content {
+            max-width: 56%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 5rem;
+            h3 {
+                font-size: 2.6rem;
+                font-weight: 700;
+            }
+            p {
+                margin-top: 3rem;
+            }
+            @include near_ipadpro {
+                max-width: 100%;
+                margin-top: 3.5rem;
+                padding-left: 0;
+                h3 {
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+    &__type {
+        margin-top: 5rem;
+        justify-content: space-between;
+        @include near_mobile {
+            margin-top: 2rem;
+        }
+        .item {
+            max-width: calc(25% - 20px);
+            figure>figcaption {
+                font-size: 2rem;
+                color: #000;
+                line-height: 1.5;
+                font-weight: 700;
+                text-align: center;
+                margin-top: 1.5rem;
+            }
+            @include near_mobile {
+                margin-top: 2rem;
+                max-width: calc(50% - 20px);
+                figure>figcaption {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+.vehicle {
+    width: 100%;
+    background-color: #1A1A1A;
+    margin-top: 8rem;
+    display: inline-block;
+    @include near_mobile {
+        margin-top: 6.5rem;
+    }
+    &-title.title {
+        font-size: 3.4rem;
+        color: #fff;
+        margin: 5rem 0 1rem 0;
+        span {
+            color: #00A599;
+            margin-top: 1rem;
+        }
+    }
+    &__container {
+        justify-content: center;
+        padding-bottom: 8rem;
+        .item {
+            max-width: calc((100%/3) - 25px);
+            margin-top: 5rem;
+            &:nth-of-type(2) {
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+            }
+            &:nth-of-type(4) {
+                margin-right: 5rem;
+            }
+            figcaption {
+                font-size: 2rem;
+                color: #fff;
+                font-weight: 700;
+                text-align: center;
+                margin-top: 1.5rem;
+                span {
+                    font-family: $font_SourceSanPro;
+                    font-weight: 700;
+                    font-size: 3rem;
+                    color: #00A599;
+                    margin-right: 1rem;
+                }
+            }
+            @include near_mobile {
+                max-width: 100%;
+                margin-top: 3rem;
+                &:nth-of-type(2) {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                &:nth-of-type(4) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
