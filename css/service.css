@@ -1,0 +1,129 @@
+.lead {
+  font-size: 1.75vw;
+  font-weight: 700;
+  color: #000;
+}
+.lead.center {
+  text-align: center;
+}
+@media screen and (max-width: 1023px) {
+  .lead {
+    font-size: 5vw;
+  }
+}
+
+.text-desc {
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: #000;
+  letter-spacing: 0.1rem;
+}
+.text-desc.center {
+  text-align: center;
+}
+.text-desc.white {
+  color: #fff;
+}
+@media screen and (max-width: 1023px) {
+  .text-desc {
+    font-size: 1.6rem;
+  }
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex > .item {
+  width: 100%;
+}
+.flex > .item.item2 {
+  max-width: 50%;
+}
+
+.service {
+  width: 100%;
+}
+.service__support .images {
+  max-width: 44%;
+}
+.service__support .images figure {
+  position: relative;
+}
+.service__support .images figure .under {
+  position: absolute;
+  z-index: -1;
+  width: 18.5rem;
+  left: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.service__support .images figure .under + img {
+  max-width: 35.7rem;
+  margin-left: auto;
+}
+.service__support .content {
+  max-width: 56%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.service__support .content h3 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.service__support .content p {
+  margin-top: 3rem;
+}
+.service__type {
+  justify-content: space-between;
+}
+.service__type .item {
+  max-width: calc(25% - 20px);
+}
+.service__type .item figure > figcaption {
+  font-size: 2rem;
+  color: #000;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.vehicle {
+  width: 100%;
+  background-color: #1A1A1A;
+}
+.vehicle__container {
+  justify-content: center;
+  padding-bottom: 8rem;
+  padding-top: 5.5rem;
+}
+.vehicle__container .item {
+  max-width: calc((100%/3) - 25px);
+  margin-top: 5rem;
+}
+.vehicle__container .item:nth-of-type(2) {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+.vehicle__container .item:nth-of-type(4) {
+  margin-right: 5rem;
+}
+.vehicle__container .item figcaption {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.vehicle__container .item figcaption span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #00A599;
+  margin-right: 1rem;
+}
+
+/*# sourceMappingURL=service.css.map */

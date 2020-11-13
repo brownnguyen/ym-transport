@@ -1,0 +1,429 @@
+@charset 'UTF-8';
+@import './functions.scss';
+$font_SourceSanPro:'Source Sans Pro',
+sans-serif;
+$font_AlFresco: AlFresco,
+sans-serif;
+.common-title {
+    font-family: $font_SourceSanPro;
+    font-size: 2rem;
+    color: #00A89C;
+    font-weight: 700;
+    text-transform: uppercase;
+    span {
+        font-size: 5vw; //8rem;
+        margin-right: 1rem;
+    }
+    &.white {
+        color: #fff;
+    }
+    &.little-small {
+        span {
+            font-size: 4.6875vw; //7rem;
+        }
+    }
+    @include near_mobile {
+        font-size: 1.7rem;
+        span {
+            font-size: 12vw; //45rem
+            // display: block;
+        }
+    }
+}
+
+.lead {
+    font-size: 1.75vw; //2.8rem;
+    font-weight: 700;
+    color: #000;
+    @include near_ipadpro {
+        font-size: 5vw //2.1rem;
+    }
+}
+
+.text-desc {
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #000;
+    letter-spacing: .1rem;
+    &.center {
+        text-align: center;
+    }
+    &.white {
+        color: #fff;
+    }
+    @include near_ipadpro {
+        font-size: 1.6rem;
+    }
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    >.item {
+        width: 100%;
+        &.item2 {
+            max-width: 50%;
+        }
+    }
+}
+
+.arrow-button {
+    width: 100%;
+    max-width: 33.3rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00A89C;
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 700;
+    position: relative;
+    transition: all .3s ease;
+    position: relative;
+    @include near_ipadpro {
+        max-width: 24rem;
+        height: 4.5rem;
+        font-size: 1.3rem;
+    }
+    &::after {
+        content: '';
+        width: 2.3rem;
+        height: 1.3rem;
+        display: block;
+        position: absolute;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        right: 1.5rem;
+        top: 50%;
+        transform-origin: center center;
+        transform: translateY(-50%) skewX(35deg);
+        transition: all .3s ease;
+    }
+    &:hover {
+        opacity: .75;
+    }
+}
+
+@keyframes __arrow {
+    0% {}
+    50% {}
+}
+
+.decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.f-symbol {
+    display: inline-block;
+    max-width: 7px;
+}
+
+.hero {
+    width: 100%;
+    height: 31.25vw; //500px
+    background-color: #fff;
+    position: relative;
+    @include near_mobile {
+        height: 66.67vw;
+    }
+    .banner {
+        height: 100%;
+        position: relative;
+        >img {
+            height: 100%;
+            max-height: 100%;
+            @include near_ipadpro {
+                object-fit: cover;
+                transform: translateX(-22.4vw);
+            }
+        }
+        figcaption {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            max-width: 52.5vw; //840px;
+            transform-origin: bottom right;
+            transform: skew(-14deg);
+            background-color: #007E75;
+            display: flex;
+            align-items: center;
+            img {
+                width: 24.875vw; //39.8rem;
+                min-width: 24.875vw; //39.8rem;
+                transform-origin: bottom right;
+                transform: skew(14deg);
+                margin-left: 5.625vw; //9.2rem;
+                opacity: .15;
+            }
+            @include near_mobile {
+                max-width: 42.67vw;
+            }
+        }
+    }
+    .content {
+        position: absolute;
+        left: 43.125vw;
+        top: 10vw;
+        @include near_mobile {
+            left: 2rem;
+            top: 12vw;
+        }
+        h2 {
+            font-size: 2.625vw; //4.2rem;
+            color: #fff;
+            line-height: 1.4;
+            filter: drop-shadow(0 0px 3px rgba(#000, .7));
+            letter-spacing: .1rem;
+            @include onIE {
+                text-shadow: 0 0 13px rgba(#000, 1);
+            }
+            span {
+                font-family: $font_SourceSanPro;
+                font-size: 2.8675vw; //4.3rem;
+                font-weight: 700;
+                font-style: italic;
+                display: block;
+            }
+            @include near_mobile {
+                font-size: 2.5rem;
+                span {
+                    font-size: 2.7rem;
+                }
+            }
+        }
+        p {
+            margin-top: 3.125vw; //5rem;
+            font-size: 1.25vw; //2rem;
+            color: #fff;
+            filter: drop-shadow(0 0px 3px rgba(#000, .7));
+            @include onIE {
+                text-shadow: 0 0 13px rgba(#000, 1);
+            }
+            font-weight: 700;
+            text-align: right;
+            span {
+                margin-left: 1rem;
+                font-size: 1.875vw; // 3rem;
+                font-family: $font_AlFresco;
+                font-weight: 400;
+            }
+            @include near_mobile {
+                font-size: 1.7rem;
+                line-height: 1.2;
+                span {
+                    font-size: 2.2rem;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.about {
+    position: relative;
+    margin-top: 8rem;
+    @include screen1600 {
+        margin-top: 5vw; //8rem;
+    }
+    .decor.about-decor {
+        width: 67.5vw;
+        height: 100%;
+        max-height: 53rem;
+        display: block;
+        transform-origin: bottom left;
+        transform: skewX(14deg);
+        background-color: #F1F1F1;
+        top: 0;
+        left: 0;
+        @include near_mobile {
+            display: none;
+        }
+    }
+    &__container.flex {
+        justify-content: space-between;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        @include screen1600 {
+            padding-top: 2.5vw; //4rem
+            padding-bottom: 2.5vw; //4rem
+        }
+        >.item {
+            max-width: calc(50% - 3.125vw); //50px
+            @include near_ipadpro {
+                max-width: calc(50% - 10px);
+            }
+            @include screen640 {
+                max-width: 100%;
+            }
+        }
+    }
+    &-content {
+        p {
+            margin-top: 3rem;
+            @include screen1600 {
+                margin-top: 1.875vw;
+                line-height: 1.4;
+            }
+            @include near_mobile {
+                margin-top: 3.875vw;
+            }
+        }
+    }
+    &-img {
+        //padding-left: 3.125vw; //5rem;
+        @include near_mobile {
+            margin-top: 5rem;
+        }
+        .flex {
+            justify-content: space-between;
+            .item {}
+            .img1 {
+                max-width: 100%;
+            }
+            .img2,
+            .img3,
+            .img4 {
+                margin-top: 1.5rem;
+                max-width: calc((100% / 3) - 6px);
+            }
+            .img2 {}
+            .img3 {}
+            .img4 {}
+        }
+    }
+}
+
+.other {
+    position: relative;
+    margin-top: 9.6rem; //6vw; //9.6rem
+    @include near_mobile {
+        margin-top: 2.6rem;
+    }
+    .decor.other-decor {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #CCEEEB;
+    }
+    &__container.flex {
+        justify-content: space-between;
+        padding: 1.3rem 0;
+        >.item {
+            max-width: calc(50% - 3.125vw); //50px);
+            background-color: #fff;
+            transform: translateY(-5.3rem);
+            @include near_mobile {
+                max-width: 100%;
+                transform: translateY(0);
+                &.company {
+                    margin-top: 2rem;
+                }
+            }
+            figure {
+                width: 100%;
+                figcaption {
+                    margin-top: 2.5rem;
+                    font-size: 3rem;
+                    color: #00A89C;
+                    text-align: center;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    span {
+                        font-family: $font_SourceSanPro;
+                        font-size: 2.2rem;
+                        display: block;
+                    }
+                    @include screen1600 {
+                        font-size: 1.875vw; //3rem;
+                    }
+                    @include near_mobile {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            .text-desc {
+                margin-top: 2.5rem;
+                @include screen1600 {
+                    margin-top: 1.5625vw;
+                }
+            }
+            .arrow-button {
+                margin: 0 auto;
+                margin-top: 4rem;
+                margin-bottom: 2rem;
+                @include screen1600 {
+                    margin-top: 2.5vw;
+                }
+            }
+        }
+    }
+}
+
+.recruit {
+    width: 100%;
+    position: relative;
+    .decor.recruit-decor {
+        width: 100%;
+        height: 100%;
+        max-height: 50rem; //32.25vw; //50rem;
+        // @include ipadpro {
+        //     height: 48vw;
+        // }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(#000, .6);
+        }
+        figure {
+            width: 100%;
+            height: 100%;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &__container {
+        padding-top: 5vw; //8rem
+        padding-bottom: 7.5vw; //12rem
+        @include near_mobile {
+            padding-top: 4.5rem;
+            padding-bottom: 4rem; //12rem
+        }
+        .common-title {
+            @include near_mobile {
+                span {
+                    font-size: 5rem;
+                    display: block;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        .text-desc {
+            margin-top: 4.5vw; //7.2rem;
+            @include near_ipadpro {
+                margin-top: 4rem; //7.2rem;
+                br {
+                    display: none;
+                }
+            }
+        }
+        .arrow-button {
+            margin-top: 4.5vw;
+            @include near_mobile {
+                margin: 0 auto;
+                margin-top: 3rem;
+            }
+        }
+    }
+}
