@@ -1,8 +1,0 @@
-header.header.fixed .header-content {
-  height: 110px; }
-
-@media screen and (max-width: 1340px) {
-  main.main {
-    margin-top: 120px; }
-  header.header {
-    /* height: 120px; */ } }
