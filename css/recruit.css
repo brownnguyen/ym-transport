@@ -50,6 +50,8 @@
   overflow: visible; }
   .contact-common:before {
     display: none; }
+  .contact-common .contact-content a.phone-contact {
+    background-color: #007f76; }
   .contact-common .contact-content p.text {
     color: black;
     margin-bottom: 2rem;

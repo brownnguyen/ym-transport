@@ -1,7 +1,7 @@
 node_modules
-scss
-sass
-*.scss
+# scss
+# sass
+# *.scss
 gulpfile.js
 .vscode
 package-lock.json
