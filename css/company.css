@@ -1,60 +1,89 @@
 .profile p.text,
 .access p.text,
 .recruit p.text {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 6rem;
-  padding: 0 20px; }
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    padding: 0 20px;
+}
 
 .profile .profile-content,
 .access .profile-content,
 .recruit .profile-content {
-  max-width: 900px;
-  width: 100%;
-  margin: auto; }
-  .profile .profile-content dl,
-  .access .profile-content dl,
-  .recruit .profile-content dl {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+.profile .profile-content dl,
+.access .profile-content dl,
+.recruit .profile-content dl {
     display: flex;
     justify-content: flex-start;
     padding: 30px 0;
-    border-bottom: 1px solid #dfdfdf; }
-    .profile .profile-content dl dt,
-    .access .profile-content dl dt,
-    .recruit .profile-content dl dt {
-      max-width: 200px;
-      width: 100%;
-      padding: 0 20px;
-      font-size: 1.7rem;
-      font-weight: bold; }
-    .profile .profile-content dl dd,
-    .access .profile-content dl dd,
-    .recruit .profile-content dl dd {
-      font-size: 1.6rem;
-      line-height: 2.5rem;
-      font-weight: bold; }
-      .profile .profile-content dl dd span,
-      .access .profile-content dl dd span,
-      .recruit .profile-content dl dd span {
-        display: block; }
+    border-bottom: 1px solid #dfdfdf;
+}
+.profile .profile-content dl dt,
+.access .profile-content dl dt,
+.recruit .profile-content dl dt {
+    max-width: 200px;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.6;
+}
+.profile .profile-content dl dd,
+.access .profile-content dl dd,
+.recruit .profile-content dl dd {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+}
+.profile .profile-content dl dd span,
+.access .profile-content dl dd span,
+.recruit .profile-content dl dd span {
+    display: block;
+}
 
 .profile .access-content img,
 .access .access-content img,
 .recruit .access-content img {
-  width: 100%; }
-
+    width: 100%;
+}
+.access .access-content img {
+    position: relative;
+    z-index: 0;
+    opacity: 1;
+}
+.access-content {
+    position: relative;
+}
+.profile .profile-content dl dd a {
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.profile .profile-content dl dd a:hover {
+    opacity: 0.8;
+    color: #00a99d;
+}
 @media screen and (max-width: 1024px) {
-  .access .access-content {
-    overflow: hidden;
-    height: 290px; }
+    .access .access-content {
+        overflow: hidden;
+        height: 290px;
+    }
     .access .access-content img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%; } }
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
 
 @media screen and (max-width: 576px) {
-  .profile .profile-content dl dt {
-    padding-left: 0;
-    max-width: 95px; }
-  .profile .profile-content dl .less-letter {
-    letter-spacing: -1px; } }
+    .profile .profile-content dl dt {
+        padding-left: 0;
+        max-width: 95px;
+    }
+    .profile .profile-content dl .less-letter {
+        letter-spacing: -1px;
+    }
+}

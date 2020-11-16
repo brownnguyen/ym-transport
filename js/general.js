@@ -37,10 +37,7 @@ $(".slide-line").click(function () {
 $(window).on('resize scroll', function () {
     var win = $(this);
     var scrollTo = window.pageYOffset;
-    console.log(win.width() > 992)
     if (win.width() > 992) {
-
-        console.log(scrollTo)
         if (scrollTo > 100) {
             header.classList.add('fixed');
         }
