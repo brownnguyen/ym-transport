@@ -30,17 +30,31 @@ _totop.click(function (e) {
 });
 $(".slide-line").click(function () {
     $('html, body').animate({
-        scrollTop: $("#scrollTo").offset().top - 150
+        scrollTop: $("#scrollTo").offset().top - 100
     }, 1000);
 });
 
-window.onscroll = function () {
+$(window).on('resize scroll', function () {
+    var win = $(this);
     var scrollTo = window.pageYOffset;
-    console.log(scrollTo)
-    if (scrollTo > 300) {
-        header.classList.add('fixed');
-    }
-    else {
+    console.log(win.width() > 992)
+    if (win.width() > 992) {
+
+        console.log(scrollTo)
+        if (scrollTo > 100) {
+            header.classList.add('fixed');
+        }
+        else {
+            header.classList.remove('fixed')
+        }
+    } else if (win.width() <= 992) {
+
         header.classList.remove('fixed')
+        if (scrollTo > 100) {
+            header.classList.add('fixed-992');
+        }
+        else {
+            header.classList.remove('fixed-992')
+        }
     }
-}
+});
