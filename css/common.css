@@ -207,6 +207,12 @@ footer.footer .footer-content .logo {
     width: 100%;
     margin-right: 20px;
 }
+footer.footer .footer-content .logo a img {
+    transition: 0.3s ease-in-out;
+}
+footer.footer .footer-content .logo a:hover img {
+    opacity: 0.8;
+}
 footer.footer .footer-content .logo .text-body {
     padding-top: 15px;
 }
@@ -216,12 +222,22 @@ footer.footer .footer-content .logo .text-body .text-direct {
 }
 footer.footer .footer-content .logo .text-body .text-direct .tel,
 footer.footer .footer-content .logo .text-body .text-direct .fax {
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "Bebas Neue", cursive;
     font-size: 2.8rem;
+    color: #1a1a1a;
+}
+footer.footer .footer-content .logo .text-body .text-direct .tel:hover {
+    opacity: 0.8;
 }
 footer.footer .footer-content .logo .text-body .text-direct .tel span,
 footer.footer .footer-content .logo .text-body .text-direct .fax span {
     font-size: 1.8rem;
+    padding-right: 5px;
+    padding-top: 5px;
 }
 footer.footer .footer-low {
     height: 60px;
