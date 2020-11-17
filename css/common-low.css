@@ -15,6 +15,7 @@
     margin-top: 3rem;
 }
 
+.h3.title,
 h3.title {
     text-align: center;
     font-size: 6rem;
@@ -22,12 +23,20 @@ h3.title {
     margin: 5rem 0 3rem 0;
 }
 
+.h3.title span,
 h3.title span {
-    font-family: "Source Sans Pro", sans-serif;
     margin-top: 2rem;
     color: black;
     font-size: 2rem;
     display: block;
+}
+
+h3.title {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+h3.title span {
+    font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
 }
 
 .top-block {
