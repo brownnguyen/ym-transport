@@ -69,7 +69,10 @@
 @media screen and (max-width: 1024px) {
     .access .access-content {
         overflow: hidden;
-        height: 290px;
+        height: 300px;
+    }
+    .access .access-content iframe {
+        height: 300px;
     }
     .access .access-content img {
         object-fit: cover;
