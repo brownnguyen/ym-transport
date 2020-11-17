@@ -1,5 +1,4 @@
 .common-title {
-    font-family: "Source Sans Pro", sans-serif;
     font-size: 2rem;
     color: #00A89C;
     font-weight: 700;
@@ -7,6 +6,7 @@
 }
 
 .common-title span {
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 5vw;
     margin-right: 1rem;
 }

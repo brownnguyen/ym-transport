@@ -1,71 +1,96 @@
 @keyframes slideAni {
-  from {
-    transform: translateY(-20px); }
-  to {
-    transform: translateY(0); } }
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
 
 .mt-5 {
-  margin-top: 5rem; }
+    margin-top: 5rem;
+}
 
 .mt-3 {
-  margin-top: 3rem; }
+    margin-top: 3rem;
+}
 
 h3.title {
-  text-align: center;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 6rem;
-  color: #00a99d;
-  margin: 5rem 0 3rem 0; }
-  h3.title span {
+    text-align: center;
+    font-size: 6rem;
+    color: #00a99d;
+    margin: 5rem 0 3rem 0;
+}
+
+h3.title span {
+    font-family: "Source Sans Pro", sans-serif;
     margin-top: 2rem;
     color: black;
     font-size: 2rem;
-    display: block; }
+    display: block;
+}
 
 .top-block {
-  position: relative; }
-  .top-block::before {
+    position: relative;
+}
+
+.top-block::before {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    content: ""; }
-  .top-block img {
-    width: 100%; }
-  .top-block .text-top {
+    content: "";
+}
+
+.top-block img {
+    width: 100%;
+}
+
+.top-block .text-top {
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translateX(-50%); }
-    .top-block .text-top h2.title {
-      font-size: 4rem;
-      text-align: center;
-      color: white; }
-      .top-block .text-top h2.title span {
-        font-size: 1.9rem;
-        font-family: "Source Sans Pro", sans-serif;
-        display: block;
-        font-weight: bold;
-        margin-top: 2rem; }
-    .top-block .text-top .slide-line {
-      animation: slideAni 1.5s infinite;
-      padding: 10px;
-      width: 50px;
-      cursor: pointer;
-      margin: 30px auto 0 auto;
-      display: block; }
-      .top-block .text-top .slide-line span {
-        display: block;
-        height: 80px;
-        width: 1px;
-        background-color: white;
-        margin: auto; }
+    transform: translateX(-50%);
+}
+
+.top-block .text-top h2.title {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+
+.top-block .text-top h2.title span {
+    font-size: 1.9rem;
+    font-family: "Source Sans Pro", sans-serif;
+    display: block;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.top-block .text-top .slide-line {
+    animation: slideAni 1.5s infinite;
+    padding: 10px;
+    width: 50px;
+    cursor: pointer;
+    margin: 30px auto 0 auto;
+    display: block;
+}
+
+.top-block .text-top .slide-line span {
+    display: block;
+    height: 80px;
+    width: 1px;
+    background-color: white;
+    margin: auto;
+}
 
 .contact-common {
-  position: relative; }
-  .contact-common:before {
+    position: relative;
+}
+
+.contact-common:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -73,10 +98,14 @@ h3.title {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.8; }
-  .contact-common .img-common-contact {
-    width: 100%; }
-  .contact-common .contact-content {
+    opacity: 0.8;
+}
+
+.contact-common .img-common-contact {
+    width: 100%;
+}
+
+.contact-common .contact-content {
     color: white;
     position: absolute;
     top: 50%;
@@ -85,79 +114,112 @@ h3.title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column; }
-    .contact-common .contact-content h2.title {
-      text-align: center;
-      font-size: 1.8rem; }
-      .contact-common .contact-content h2.title span {
-        display: block;
-        font-family: "Source Sans Pro", sans-serif;
-        font-size: 6rem;
-        margin-bottom: 5px; }
-    .contact-common .contact-content p.text {
-      margin: 20px 0 15px 0; }
-    .contact-common .contact-content a.phone-contact {
-      transition: 0.3s ease;
-      display: block;
-      background-color: #002a27;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 500px;
-      height: 125px;
-      color: white; }
-      .contact-common .contact-content a.phone-contact:hover {
-        opacity: 0.8; }
-      .contact-common .contact-content a.phone-contact .number {
-        font-size: 6rem;
-        font-family: "Bebas Neue", cursive;
-        line-height: 4rem; }
-        .contact-common .contact-content a.phone-contact .number img {
-          display: inline-block;
-          margin: 10px 10px 0 0; }
-        .contact-common .contact-content a.phone-contact .number span {
-          font-size: 1.5rem;
-          display: block;
-          text-align: center;
-          line-height: 1.4;
-          margin-top: 10px; }
+    flex-direction: column;
+}
+
+.contact-common .contact-content h2.title {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.contact-common .contact-content h2.title span {
+    display: block;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 6rem;
+    margin-bottom: 5px;
+}
+
+.contact-common .contact-content p.text {
+    margin: 20px 0 15px 0;
+}
+
+.contact-common .contact-content a.phone-contact {
+    transition: 0.3s ease;
+    display: block;
+    background-color: #002a27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 125px;
+    color: white;
+}
+
+.contact-common .contact-content a.phone-contact:hover {
+    opacity: 0.8;
+}
+
+.contact-common .contact-content a.phone-contact .number {
+    font-size: 6rem;
+    font-family: "Bebas Neue", cursive;
+    line-height: 4rem;
+}
+
+.contact-common .contact-content a.phone-contact .number img {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+}
+
+.contact-common .contact-content a.phone-contact .number span {
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 10px;
+}
 
 @media screen and (max-width: 1200px) {
-  .contact-common {
-    height: 310px;
-    overflow: hidden; }
+    .contact-common {
+        height: 310px;
+        overflow: hidden;
+    }
     .contact-common .img-common-contact {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; } }
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 
 @media screen and (max-width: 992px) {
-  .top-block {
-    height: 200px;
-    overflow: hidden; }
+    .top-block {
+        height: 200px;
+        overflow: hidden;
+    }
     .top-block .text-top h2.title {
-      font-size: 2.7rem; }
+        font-size: 2.7rem;
+    }
     .top-block .text-top .slide-line {
-      height: 50px; }
+        height: 50px;
+    }
     .top-block .img-top {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; } }
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 
 @media screen and (max-width: 576px) {
-  h3.title {
-    font-size: 4rem; }
-  .contact-common .contact-content h2.title span {
-    font-size: 4.5rem; }
-  .contact-common .contact-content p.text {
-    font-size: 1.7rem;
-    text-align: center; }
-  .contact-common .contact-content a.phone-contact {
-    width: 300px;
-    height: 90px; }
+    h3.title {
+        font-size: 4rem;
+    }
+    .contact-common .contact-content h2.title span {
+        font-size: 4.5rem;
+    }
+    .contact-common .contact-content p.text {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .contact-common .contact-content a.phone-contact {
+        width: 300px;
+        height: 90px;
+    }
     .contact-common .contact-content a.phone-contact .number {
-      font-size: 4.5rem; }
-      .contact-common .contact-content a.phone-contact .number img {
-        width: 35px; }
-      .contact-common .contact-content a.phone-contact .number span {
-        margin-top: 0; } }
+        font-size: 4.5rem;
+    }
+    .contact-common .contact-content a.phone-contact .number img {
+        width: 35px;
+    }
+    .contact-common .contact-content a.phone-contact .number span {
+        margin-top: 0;
+    }
+}

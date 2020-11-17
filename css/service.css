@@ -59,6 +59,7 @@
 
 .service-title.title {
     font-size: 8rem;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 .service-title.title span {
@@ -196,6 +197,7 @@
 }
 
 .vehicle-title.title span {
+    font-family: "Source Sans Pro", sans-serif;
     color: #00A599;
     margin-top: 1rem;
 }
