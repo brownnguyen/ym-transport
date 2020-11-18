@@ -3,12 +3,19 @@
     color: #00A89C;
     font-weight: 700;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .common-title span {
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 5vw;
+    font-size: 8rem;
     margin-right: 1rem;
+}
+
+@media screen and (max-width: 1600px) {
+    .common-title span {
+        font-size: 5vw;
+    }
 }
 
 .common-title.white {
